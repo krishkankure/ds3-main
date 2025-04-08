@@ -13,7 +13,79 @@
   ],
   "boardMembers": [
     {
-      "name": "Name Placeholder",
+      "name": "Trey Scheid",
+      "committee": "Executives",
+      "image": "/src/Assets/Images/placeholder.png",
+      "personalWebsite": "https://example.com",
+      "resume": "https://drive.google.com/open?id=1dj36nMJSk6cBbvSKW6uQ1K7K4EZ6gMEY",
+      "linkedIn": "https://www.linkedin.com/in/treyscheid/"
+    },
+    {
+      "name": "Kai Ni",
+      "committee": "Executives",
+      "image": "/src/Assets/Images/placeholder.png",
+      "personalWebsite": "https://example.com",
+      "resume": "https://example.com/resume",
+      "linkedIn": "https://www.linkedin.com/in/ckai-io"
+    },
+    {
+      "name": "Camille Sicat",
+      "committee": "Executives",
+      "image": "/src/Assets/Images/placeholder.png",
+      "personalWebsite": "https://example.com",
+      "resume": "https://docs.google.com/document/d/1ZNN62iaBgX6vG8cF3zpq-QTMRQt3xhgZYZG7vstM608/edit?tab=t.0",
+      "linkedIn": "https://www.linkedin.com/in/camille-sicat-8b3267256/"
+    },
+    {
+      "name": "Vrisan Dubey",
+      "committee": "Executives",
+      "image": "/src/Assets/Images/placeholder.png",
+      "personalWebsite": "https://example.com",
+      "resume": "https://drive.google.com/file/d/1E8QFrKHd-cLxdJF99PVvq_RfAE7GG2De/view?usp=sharing",
+      "linkedIn": "https://www.linkedin.com/in/vrisan-dubey-889421235/"
+    },
+    {
+      "name": "Rushil Chandrupatla",
+      "committee": "Executives",
+      "image": "/src/Assets/Images/placeholder.png",
+      "personalWebsite": "https://example.com",
+      "resume": "https://example.com/resume",
+      "linkedIn": "https://www.linkedin.com/search/results/people/?firstName=%2B&lastName=Chandrupatla&origin=SEO_PSERP&sid=!p."
+    },
+    {
+      "name": "Nate del Rosario",
+      "committee": "Executives",
+      "image": "/src/Assets/Images/placeholder.png",
+      "personalWebsite": "https://example.com",
+      "resume": "https://example.com/resume",
+      "linkedIn": "https://www.linkedin.com/in/natdosan/"
+    },
+    {
+      "name": "Kaii Bijlani",
+      "committee": "Executives",
+      "image": "/src/Assets/Images/placeholder.png",
+      "personalWebsite": "https://example.com",
+      "resume": "https://drive.google.com/file/d/19nskAPS41-rzh9bZRcVcSjPtSvNcgtwO/view?usp=sharing",
+      "linkedIn": "https://www.ds3ucsd.com/board"
+    },
+    {
+      "name": "Sid Joshi",
+      "committee": "Executives",
+      "image": "/src/Assets/Images/placeholder.png",
+      "personalWebsite": "https://example.com",
+      "resume": "https://sid-jo.github.io/",
+      "linkedIn": "https://www.linkedin.com/in/sid-jo/"
+    },
+    {
+      "name": "Zoe Ludena",
+      "committee": "Executives",
+      "image": "/src/Assets/Images/placeholder.png",
+      "personalWebsite": "https://example.com",
+      "resume": "https://zoeludena.github.io/zoe_ludena/",
+      "linkedIn": "https://www.linkedin.com/in/zoe-ludena/"
+    },
+    {
+      "name": "Jason Qin",
       "committee": "Executives",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -21,7 +93,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Jennifer Hung",
       "committee": "Executives",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -29,7 +101,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Vaidehi Karve",
       "committee": "Executives",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -37,7 +109,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Jiahe Qin ",
       "committee": "Executives",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -45,7 +117,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Yagnasri Chilukuri ",
       "committee": "Executives",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -53,39 +125,71 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
-      "committee": "Executives",
+      "name": "Jared Simpauco",
+      "committee": "Finance",
+      "image": "/src/Assets/Images/placeholder.png",
+      "personalWebsite": "https://example.com",
+      "resume": "https://www.linkedin.com/in/jared-simpauco-6a0731223/",
+      "linkedIn": "https://www.linkedin.com/in/jared-simpauco-6a0731223/"
+    },
+    {
+      "name": "Sid Joshi",
+      "committee": "Finance",
+      "image": "/src/Assets/Images/placeholder.png",
+      "personalWebsite": "https://example.com",
+      "resume": "https://sid-jo.github.io/",
+      "linkedIn": "https://www.linkedin.com/in/sid-jo/"
+    },
+    {
+      "name": "Kendall",
+      "committee": "Finance",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
       "resume": "https://example.com/resume",
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
-      "committee": "Executives",
+      "name": "Nian-Nian Wang",
+      "committee": "Finance",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
       "resume": "https://example.com/resume",
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
-      "committee": "Executives",
+      "name": "Vivian Zhu",
+      "committee": "Finance",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
       "resume": "https://example.com/resume",
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
-      "committee": "Executives",
+      "name": "Yohan Kwon",
+      "committee": "Finance",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
       "resume": "https://example.com/resume",
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Emily Cai",
+      "committee": "Finance",
+      "image": "/src/Assets/Images/placeholder.png",
+      "personalWebsite": "https://example.com",
+      "resume": "https://example.com/resume",
+      "linkedIn": "https://linkedin.com/in/example"
+    },
+    {
+      "name": "Heidi Tam",
+      "committee": "Marketing",
+      "image": "/src/Assets/Images/placeholder.png",
+      "personalWebsite": "https://example.com",
+      "resume": "https://drive.google.com/file/d/1lDiImjNe28tr4Jk78HylMMfz3s7xPGOs/view?usp=sharing",
+      "linkedIn": "https://www.linkedin.com/in/heiditam/"
+    },
+    {
+      "name": "Kate Feng",
       "committee": "Marketing",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -93,7 +197,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Jahnavi Naik",
       "committee": "Marketing",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -101,7 +205,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Essie Cheng",
       "committee": "Marketing",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -109,7 +213,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Devesh Panda",
       "committee": "Marketing",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -117,7 +221,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Lydia Chin",
       "committee": "Marketing",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -125,39 +229,31 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Katelyn Abille",
       "committee": "Marketing",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
+      "resume": "https://docs.google.com/document/d/13OZTwHA91d5cpepjAiaqcsWL80vtJ3yslwFsKfRhssE/edit?usp=drivesdk",
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
-      "committee": "Marketing",
+      "name": "Kylee Kim",
+      "committee": "Design",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
+      "resume": "https://drive.google.com/file/d/1kGWICQpxtfyJ2Mp42oR8dM_roeJHY2ub/view?usp=drive_link",
+      "linkedIn": "https://www.linkedin.com/in/kylee-kim-919a85260/"
     },
     {
-      "name": "Name Placeholder",
-      "committee": "Marketing",
+      "name": "Jennifer Chang",
+      "committee": "Design",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
+      "resume": "https://docs.google.com/document/d/1Mh8GlXlRiroMFS1xqhCmxI1KXcv2neciDp0z5EnpCA8/edit?usp=sharing",
+      "linkedIn": "https://www.linkedin.com/in/jennifer-chang-769ba71b3/"
     },
     {
-      "name": "Name Placeholder",
-      "committee": "Marketing",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
+      "name": "Sunny Sun",
       "committee": "Design",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -165,7 +261,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Viki Shi",
       "committee": "Design",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -173,7 +269,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Kate Hong",
       "committee": "Design",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -181,7 +277,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Nao Song",
       "committee": "Design",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -189,7 +285,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Grace Chen",
       "committee": "Design",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -197,39 +293,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
-      "committee": "Design",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Design",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Design",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Design",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
+      "name": "Nolan Chu",
       "committee": "Workshops",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -237,7 +301,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Selina Wu",
       "committee": "Workshops",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -245,7 +309,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Mehak Kapur",
       "committee": "Workshops",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -253,7 +317,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Charles Rivera",
       "committee": "Workshops",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -261,7 +325,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Tijil Chhabra",
       "committee": "Workshops",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -269,7 +333,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Aarshia Gupta",
       "committee": "Workshops",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -277,31 +341,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
-      "committee": "Workshops",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Workshops",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Workshops",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
+      "name": "Annabelle Guiditta",
       "committee": "Professional Events",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -309,7 +349,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Connie Liu",
       "committee": "Professional Events",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -317,7 +357,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Jacob Lee",
       "committee": "Professional Events",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -325,7 +365,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Joy Liu",
       "committee": "Professional Events",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -333,7 +373,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Lauren Vo",
       "committee": "Professional Events",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -341,7 +381,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Nick Swetlin",
       "committee": "Professional Events",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -349,7 +389,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Rakshan Patnaik",
       "committee": "Professional Events",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -357,23 +397,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
-      "committee": "Professional Events",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Professional Events",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
+      "name": "Tzu Chuan Yeh",
       "committee": "Social Events",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -381,7 +405,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Nian-Cin Wang",
       "committee": "Social Events",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -389,7 +413,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Jennifer Kuei",
       "committee": "Social Events",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -397,7 +421,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Minyoung Kim",
       "committee": "Social Events",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -405,7 +429,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Saanvi Ranadive",
       "committee": "Social Events",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -413,7 +437,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Shriya Konda",
       "committee": "Social Events",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -421,7 +445,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Dhruv Sehgal",
       "committee": "Social Events",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -429,23 +453,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
-      "committee": "Social Events",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Social Events",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
+      "name": "Jeffrey Kang",
       "committee": "Online Content",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -453,71 +461,15 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
-      "committee": "Online Content",
+      "name": "Ansh Bhatnagar",
+      "committee": "Infrastructure",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
+      "resume": "https://docs.google.com/document/d/11ZPtdhCpwdMsf9HBRh65btXKlkbkT533/edit?usp=sharing",
+      "linkedIn": "https://www.linkedin.com/in/ansh-bhatnagar-721286234/"
     },
     {
-      "name": "Name Placeholder",
-      "committee": "Online Content",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Online Content",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Online Content",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Online Content",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Online Content",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Online Content",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Online Content",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
+      "name": "Anirudh Annabathula",
       "committee": "Infrastructure",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -525,7 +477,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Krish Kankure",
       "committee": "Infrastructure",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -533,7 +485,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Isaac Roy",
       "committee": "Infrastructure",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -541,7 +493,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Jeronimo Adames-Baena",
       "committee": "Infrastructure",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -549,7 +501,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "April Huang",
       "committee": "Infrastructure",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -557,7 +509,15 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Ishayu Ghosh",
+      "committee": "Infrastructure",
+      "image": "/src/Assets/Images/placeholder.png",
+      "personalWebsite": "https://example.com",
+      "resume": "https://drive.google.com/file/d/1xZ7tO7iYJRYOvQMDGwLcs_y4Be4xmhdg/view?usp=share_link",
+      "linkedIn": "www.linkedin.com/in/ishayughosh"
+    },
+    {
+      "name": "Shamita Goyal",
       "committee": "Infrastructure",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -565,7 +525,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Anagha Kamath",
       "committee": "Infrastructure",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -573,7 +533,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Palina Volskaya",
       "committee": "Infrastructure",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -581,15 +541,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
-      "committee": "Infrastructure",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
+      "name": "Anirudh Annabathula",
       "committee": "Projects",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -597,7 +549,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Rocio Saez Aguirre",
       "committee": "Projects",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -605,7 +557,7 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
+      "name": "Ketan Mittal",
       "committee": "Projects",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
@@ -613,137 +565,25 @@
       "linkedIn": "https://linkedin.com/in/example"
     },
     {
-      "name": "Name Placeholder",
-      "committee": "Projects",
+      "name": "So Hirota",
+      "committee": "UNKNOWN",
       "image": "/src/Assets/Images/placeholder.png",
       "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Projects",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Projects",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Projects",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Projects",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Projects",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Consulting",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Consulting",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Consulting",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Consulting",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Consulting",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Consulting",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Consulting",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Consulting",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
-    },
-    {
-      "name": "Name Placeholder",
-      "committee": "Consulting",
-      "image": "/src/Assets/Images/placeholder.png",
-      "personalWebsite": "https://example.com",
-      "resume": "https://example.com/resume",
-      "linkedIn": "https://linkedin.com/in/example"
+      "resume": "https://soh09.github.io/assets/so_hirota_resume.pdf",
+      "linkedIn": "https://www.linkedin.com/in/so-hirota/"
     }
   ],
-
+  
   "committeeDescriptions": {
-  "Executives": "Our executive team leads DS3 with vision and dedication, coordinating across all committees to fulfill our mission of fostering data science education and community at UCSD.",
-  "Marketing": "Our marketing team promotes DS3 on social media platforms like Instagram to attract new members while staying current with popular trends. They create engaging content that showcases our events and community to the wider UCSD campus.",
-  "Design": "The design committee creates visually appealing themes and graphics that are applied throughout the club. They establish our visual identity and ensure consistency across all DS3 materials, from event flyers to website elements.",
-  "Workshops": "Our workshops team hosts interactive sessions on topics ranging from web development to GitHub to machine learning. They design and deliver hands-on learning experiences that teach audiences new technologies through engaging, practical instruction.",
-  "Professional Events": "This committee invites company representatives from organizations like Qualcomm and Palantir to meet with our members. They organize networking sessions, tech talks, and recruitment events that connect students with industry professionals.",
-  "Social Events": "The social events team plans and coordinates gatherings like beach bonfires and other activities where members can get to know each other and connect. They foster a sense of community and belonging among DS3 members outside of technical contexts.",
-  "Online Content": "Our online content team creates and curates educational resources, tutorials, and articles related to data science. They develop digital content that extends our educational mission beyond in-person events, making knowledge accessible to a wider audience.",
-  "Infrastructure": "This committee designs and maintains the DS3 website using cutting-edge technologies. They ensure our digital presence is modern, functional, and reflective of our mission while implementing best practices in web development.",
-  "Projects": "The projects team creates various machine learning initiatives for members to join. They mentor participants through the development of impressive projects that can be showcased to employers, providing hands-on experience with real-world data science applications.",
-  "Consulting": "Our consulting committee meets with external companies and faculty to create new DS3 events and opportunities. They build partnerships that enhance our offerings and connect our organization with the broader data science community."
+    "Executives": "Our executive team leads DS3 with vision and dedication, coordinating across all committees to fulfill our mission of fostering data science education and community at UCSD.",
+    "Marketing": "Our marketing team promotes DS3 on social media platforms like Instagram to attract new members while staying current with popular trends. They create engaging content that showcases our events and community to the wider UCSD campus.",
+    "Design": "The design committee creates visually appealing themes and graphics that are applied throughout the club. They establish our visual identity and ensure consistency across all DS3 materials, from event flyers to website elements.",
+    "Workshops": "Our workshops team hosts interactive sessions on topics ranging from web development to GitHub to machine learning. They design and deliver hands-on learning experiences that teach audiences new technologies through engaging, practical instruction.",
+    "Professional Events": "This committee invites company representatives from organizations like Qualcomm and Palantir to meet with our members. They organize networking sessions, tech talks, and recruitment events that connect students with industry professionals.",
+    "Social Events": "The social events team plans and coordinates gatherings like beach bonfires and other activities where members can get to know each other and connect. They foster a sense of community and belonging among DS3 members outside of technical contexts.",
+    "Online Content": "Our online content team creates and curates educational resources, tutorials, and articles related to data science. They develop digital content that extends our educational mission beyond in-person events, making knowledge accessible to a wider audience.",
+    "Infrastructure": "This committee designs and maintains the DS3 website using cutting-edge technologies. They ensure our digital presence is modern, functional, and reflective of our mission while implementing best practices in web development.",
+    "Projects": "The projects team creates various machine learning initiatives for members to join. They mentor participants through the development of impressive projects that can be showcased to employers, providing hands-on experience with real-world data science applications.",
+    "Consulting": "Our consulting committee meets with external companies and faculty to create new DS3 events and opportunities. They build partnerships that enhance our offerings and connect our organization with the broader data science community."
   }
 }
