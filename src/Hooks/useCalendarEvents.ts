@@ -1,15 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
+import { EventType } from "../Utils/types";
 
-type EventItem = {
-  title: string;
-  date: string;
-  type: string;
-  description: string;
-  location:string;
-};
 export function useCalendarEvents() {
-  const [events, setEvents] = useState<EventItem[]>([]);
+  const [events, setEvents] = useState<EventType[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const calendarId = import.meta.env.VITE_CALENDAR_ID;
@@ -55,9 +49,9 @@ export function useCalendarEvents() {
 
             const image =
               rawUrl?.includes("drive.google.com") && rawUrl.includes("id=")
-                ? `https://drive.google.com/uc?export=view&id=${new URL(rawUrl).searchParams.get(
+                ? `https://drive.google.com/thumbnail?id=${new URL(rawUrl).searchParams.get(
                     "id"
-                  )}`
+                  )}&sz=s1000`
                 : rawUrl;
 
             return {
@@ -74,8 +68,7 @@ export function useCalendarEvents() {
       } catch (err: any) {
         setError(err.message);
       } finally {
-        setTimeout(()=>{setLoading(false)},5000)
-        
+        setLoading(false);
       }
     };
 
