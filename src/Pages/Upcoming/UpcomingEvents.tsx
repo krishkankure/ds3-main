@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useTheme } from "../Home/useTheme";
 import { useCalendarEvents } from "../../Hooks/useCalendarEvents";
 const skeletonContent = {
@@ -6,51 +5,19 @@ const skeletonContent = {
   date: "",
   description: "",
   type: "",
+  location: "",
 };
 export default function UpcomingEvents() {
-  const eventTypes = ["Social", "Professional", "Workshop"];
-  const [filter, setFilter] = useState("");
   const { events, loading, error } = useCalendarEvents();
 
   return (
     <>
       <div className="w-full flex md:px-24 px-2 py-10 gap-2 flex-col">
-        <div className="flex gap-4 w-full mb-2 ">
-          {!loading &&
-            eventTypes.map((event) => {
-              return (
-                <button
-                  className={`rounded-full w-fit h-fit px-4 py-2 border-2 border-white ${
-                    filter === event ? "bg-white" : ""
-                  }`}
-                  onClick={() => {
-                    if (event != filter) {
-                      setFilter(event);
-                    } else {
-                      setFilter("");
-                    }
-                  }}
-                >
-                  {event}
-                </button>
-              );
-            })}
-          {loading &&
-            Array.from({ length: 3 }).map(() => {
-              return (
-                <button className="rounded-full w-32 h-fit px-4 py-2 border-2 border-white skeleton ">
-                  &nbsp;
-                </button>
-              );
-            })}
-        </div>
         <div className="grid grid-cols-[repeat(auto-fit,clamp(300px,40vw,400px))] w-full gap-2 md:gap-5 ">
           {!loading &&
-            events
-              .filter((daton) => daton.type === filter || filter === "")
-              .map((daton, index) => {
-                return <Card {...daton} key={index} />;
-              })}
+            events.map((daton, index) => {
+              return <Card {...daton} key={index} />;
+            })}
           {loading &&
             Array.from({ length: 10 }).map((_, index) => {
               return (
@@ -70,11 +37,13 @@ function Card({
   date,
   description,
   image,
+  location,
 }: {
   title?: string;
   date?: string;
   description?: string;
   image?: string;
+  location: string;
 }) {
   const { isDark } = useTheme();
   console.log(image);
@@ -106,7 +75,6 @@ function Card({
           style={{
             fontFamily: "'Albert Sans', sans-serif",
             color: isDark ? "white" : "black",
-            lineHeight: "70px",
           }}
         >
           {title}
@@ -116,19 +84,25 @@ function Card({
           style={{
             fontFamily: "'Albert Sans', sans-serif",
             color: isDark ? "white" : "black",
-            lineHeight: "25px",
           }}
         >
           {date}
         </p>
+        <p
+          className="text-lg opacity-80"
+          style={{
+            fontFamily: "'Albert Sans', sans-serif",
+            color: isDark ? "white" : "black",
+          }}
+        >
+          {location}
+        </p>
       </div>
-      <div className="w-full aspect-video relative mb-2">
-        <iframe
-          src="https://drive.google.com/file/d/1gpk-KfMcd-5c2UlaiD1Inf4A4scWLvn-/preview"
+      <div className="max-h-[300px] w-full mx-auto aspect-[1/1.3] m-auto-[1/1.3] relative mb-2">
+        <img
+          src={image}
           className=" object-cover rounded-md z-2 w-full h-full"
-          scrolling="no"
-          frameBorder={0}
-        ></iframe>
+        ></img>
         {/* <div className="absolute top-0 skeleton z-1 w-full h-full rounded-lg"></div> */}
       </div>
 
@@ -160,6 +134,19 @@ function Card({
           </p>
         </>
       )}
+      {/* {description && title && date && (
+        <a
+          href={`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title?.replace(
+            " ",
+            "+"
+          )}&details=${description}&location=${""}&dates=${new Date(
+            date
+          ).toISOString()}&ctz=America/Los_Angeles
+`}
+        >
+          Add to Calendar
+        </a>
+      )} */}
     </div>
   );
 }

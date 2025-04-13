@@ -6,6 +6,7 @@ type EventItem = {
   date: string;
   type: string;
   description: string;
+  location:string;
 };
 export function useCalendarEvents() {
   const [events, setEvents] = useState<EventItem[]>([]);
