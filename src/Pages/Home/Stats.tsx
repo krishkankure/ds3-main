@@ -179,13 +179,13 @@ const Stats = () => {
       <div className="grid grid-cols-[repeat(auto-fit,clamp(350px,49%,800px))] gap-y-8 justify-around mt-10 w-full">
         <Card
           title="DataHacks"
-          imageSrc="src/Assets/Images/homepage/images/datahacks_2.jpg"
+          imageSrc="src/Assets/Images/homepage/images/datahacks_2.jpeg"
           description="Do projects and make your resume look better. I love projects so much omg!"
           link="www.ds3ucsd.com/our-team/datahacks"
         />
         <Card
           title="Projects & Consulting"
-          imageSrc="src/Assets/Images/homepage/images/projects-img.png"
+          imageSrc="src/Assets/Images/homepage/images/projects-img.jpeg"
           description="Do projects and make your resume look better. I love projects so much omg!"
           link="www.ds3ucsd.com/our-team/projects"
         />

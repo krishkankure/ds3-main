@@ -35,9 +35,11 @@ export default function UpcomingEvents() {
         </div> */}
 
       {loading ? (
-        Array.from({ length: 3 }).map((_, index) => (
-          <Card {...({} as EventType)} key={index} />
-        ))
+        <div className="grid grid-cols-[repeat(auto-fit,clamp(300px,40vw,400px))] w-full  md:gap-5 ">
+          {Array.from({ length: 10 }).map((_, index) => (
+            <Card {...({} as EventType)} key={index} />
+          ))}
+        </div>
       ) : error ? (
         <Error message={error!} />
       ) : (
@@ -52,7 +54,7 @@ export default function UpcomingEvents() {
   );
 }
 
-function Card({ title, date, description, image }: EventType) {
+function Card({ title, date, description, image, location }: EventType) {
   const { isDark } = useTheme();
   console.log(image);
   return (
