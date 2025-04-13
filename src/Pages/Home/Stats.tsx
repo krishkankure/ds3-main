@@ -165,7 +165,9 @@ const Stats = () => {
             {/* Vertical divider (only on desktop and except after the last stat) */}
             {index < statsData.length - 1 && (
               <div
-                className={`hidden md:block ${isDark ? "bg-white" : "bg-gray-800"}`}
+                className={`hidden md:block ${
+                  isDark ? "bg-white" : "bg-gray-800"
+                }`}
                 style={{ width: "2px", height: "4.5vw" }}
               />
             )}
@@ -174,15 +176,15 @@ const Stats = () => {
       </div>
 
       {/* Cards Section */}
-      <div className="grid grid-cols-[repeat(auto-fit,clamp(400px,40%,650px))] gap-8 justify-center mt-10 w-full">
+      <div className="grid grid-cols-[repeat(auto-fit,clamp(350px,49%,800px))] gap-y-8 justify-around mt-10 w-full">
         <Card
-          title="Data Hacks"
-          imageSrc="src/Assets/Images/homepage/images/datahacks_2.png"
+          title="DataHacks"
+          imageSrc="src/Assets/Images/homepage/images/datahacks_2.jpg"
           description="Do projects and make your resume look better. I love projects so much omg!"
           link="www.ds3ucsd.com/our-team/datahacks"
         />
         <Card
-          title="Projects"
+          title="Projects & Consulting"
           imageSrc="src/Assets/Images/homepage/images/projects-img.png"
           description="Do projects and make your resume look better. I love projects so much omg!"
           link="www.ds3ucsd.com/our-team/projects"
