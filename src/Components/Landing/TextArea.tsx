@@ -7,14 +7,14 @@ export default function Text() {
 
   return (
     <div
-      className="flex flex-col justify-center mt-[10vh] md:mt-[20vh]"
+      className="flex flex-col justify-start mt-[8vh] md:mt-[20vh]"
       id="textarea"
     >
       <div className="">
         <div
           className={`flex ${
             isDark ? "text-white" : "text-black"
-          } lg:text-[2vw] leading-[2vw] ml-[-0.1rem] font-albert-sans`}
+          } text-[4vw] lg:text-[2vw] leading-normal lg:leading-[2vw] ml-[-0.1rem] font-albert-sans mb-2 lg:mb-2`}
         >
           <div className="text-[#F58134]">LEARN</div>,
           <div className="text-[#19B5CA] ml-[0.5rem]">BUILD</div>,
@@ -23,32 +23,55 @@ export default function Text() {
             WITH DATA
           </span>
         </div>
-        <div className="flex flex-col">
-          <div className="flex items-center">
+        <div className="flex flex-col -ml-[0.1rem]">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center">
             <p
-              className={`lg:text-[4vw] text-[8.5vw] ${
+              className={`lg:text-[4vw] text-[11vw] ${
                 isDark ? "text-white" : "text-black"
-              } font-medium font-albert-sans leading-tight`}
+              } font-medium font-albert-sans leading-[1.1] lg:leading-tight`}
             >
               Data Science
+            </p>
+            <p
+              className={`lg:text-[4vw] text-[11vw] ${
+                isDark ? "text-white" : "text-black"
+              } font-medium font-albert-sans leading-[1.1] lg:leading-tight lg:ml-4 hidden lg:block`}
+            >
+              Student
+            </p>
+          </div>
+          <div className="lg:hidden flex items-center">
+            <p
+              className={`text-[11vw] ${
+                isDark ? "text-white" : "text-black"
+              } font-medium font-albert-sans leading-[1.1]`}
+            >
+              Student Society
             </p>
             <img
               src={`${baseURL}/src/Assets/Images/ds3_logo.png`}
               alt="Logo"
-              className="-scale-x-100 w-12 object-contain ml-2 hidden md:block"
+              className="-scale-x-100 w-12 object-contain ml-2"
             />
           </div>
-          <p
-            className={`lg:text-[4vw] text-[8.5vw] ${
-              isDark ? "text-white" : "text-black"
-            } font-medium font-albert-sans leading-tight`}
-          >
-            Student Society
-          </p>
+          <div className="hidden lg:flex items-center">
+            <p
+              className={`lg:text-[4vw] text-[11vw] ${
+                isDark ? "text-white" : "text-black"
+              } font-medium font-albert-sans leading-[1.1] lg:leading-tight`}
+            >
+              Society
+            </p>
+            <img
+              src={`${baseURL}/src/Assets/Images/ds3_logo.png`}
+              alt="Logo"
+              className="-scale-x-100 w-12 object-contain ml-2"
+            />
+          </div>
         </div>
 
         <div
-          className={`mt-1 md:text-[1.5vw] text-[5vw] sm:text-[3vw] pb-10 font-albert-sans ${
+          className={`mt-2 text-[4.5vw] md:text-[1.5vw] pb-6 md:pb-10 font-albert-sans ${
             isDark ? "text-white" : "text-black"
           }`}
         >
