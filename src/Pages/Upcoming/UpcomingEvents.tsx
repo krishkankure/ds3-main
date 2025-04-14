@@ -54,12 +54,12 @@ export default function UpcomingEvents() {
   );
 }
 
-function Card({ title, date, description, image, location }: EventType) {
+function Card({ title, date, description, imageUrl, addToCalendarUrl,location }: EventType) {
   const { isDark } = useTheme();
-  console.log(image);
+
   return (
     <div
-      className={`p-4 rounded-lg shadow-lg border relative cursor-pointer duration-100 w-full aspect-[1/1.2] ${
+      className={`p-4 rounded-lg shadow-lg border relative duration-100 w-full aspect-[1/1.2] ${
         isDark
           ? "bg-black text-white border-white hover:[box-shadow:0px_0px_20px_8px_#F58134]"
           : "bg-white text-black border-gray-300 hover:[box-shadow:0px_0px_20px_8px_#11B3C9]"
@@ -108,15 +108,15 @@ function Card({ title, date, description, image, location }: EventType) {
           {location}
         </p>
       </div>
-      <div className="max-h-[300px] w-full mx-auto aspect-[1/1.3] m-auto-[1/1.3] relative mb-2">
-        <img
-          src={image}
-          className="object-cover rounded-md z-2 w-full h-full"
-        />
-        {/* <div className="absolute top-0 skeleton z-1 w-full h-full rounded-lg"></div> */}
+      <div className="w-full aspect-video relative mb-2">
+        {imageUrl ? (
+          <img src={imageUrl} className="object-cover rounded-md z-2 w-full h-full" />
+        ) : (
+          <div className="absolute top-0 skeleton z-1 w-full h-full rounded-lg"></div>
+        )}
       </div>
 
-      {description && (
+      {description ? (
         <p
           className="text-lg opacity-80 md:max-h-[35%] overflow-y-auto text-wrap w-full"
           style={{
@@ -126,37 +126,39 @@ function Card({ title, date, description, image, location }: EventType) {
           }}
           dangerouslySetInnerHTML={{ __html: description ? description : "" }}
         ></p>
+      ) : (
+        <div
+          className="text-lg opacity-80 md:max-h-[35%] overflow-y-auto text-wrap w-full"
+          style={{
+            fontFamily: "'Albert Sans', sans-serif",
+            color: isDark ? "white" : "black",
+            lineHeight: "25px",
+          }}
+        >
+          <div className="h-7 m-1 w-auto skeleton"></div>
+          <div className="h-7 m-1 w-auto skeleton"></div>
+          <div className="h-7 m-1 w-auto skeleton"></div>
+          <div className="h-7 m-1 w-[80%] skeleton"></div>
+        </div>
       )}
-      {!description && (
-        <>
-          <p
-            className="text-lg opacity-80 md:max-h-[35%] overflow-y-auto text-wrap w-full"
-            style={{
-              fontFamily: "'Albert Sans', sans-serif",
-              color: isDark ? "white" : "black",
-              lineHeight: "25px",
-            }}
-          >
-            <div className="h-7 m-1 w-auto skeleton"></div>
-            <div className="h-7 m-1 w-auto skeleton"></div>
-            <div className="h-7 m-1 w-auto skeleton"></div>
-            <div className="h-7 m-1 w-[80%] skeleton"></div>
-          </p>
-        </>
-      )}
-      {/* {description && title && date && (
+
+      {addToCalendarUrl && (
         <a
-          href={`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title?.replace(
-            " ",
-            "+"
-          )}&details=${description}&location=${""}&dates=${new Date(
-            date
-          ).toISOString()}&ctz=America/Los_Angeles
-`}
+          href={addToCalendarUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`text-lg px-4 py-2 rounded-md ${
+            isDark ? "!text-white bg-[#F58134]" : "!text-black bg-[#11B3C9]"
+          }`}
+          style={{
+            fontFamily: "'Albert Sans', sans-serif",
+            color: isDark ? "#F58134" : "#11B3C9",
+            lineHeight: "70px",
+          }}
         >
           Add to Calendar
         </a>
-      )} */}
+      )}
     </div>
   );
 }
