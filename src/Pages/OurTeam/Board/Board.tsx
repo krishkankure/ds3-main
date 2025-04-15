@@ -1,20 +1,10 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import { useTheme } from "../../../Pages/Home/useTheme";
 import Page from "../../../Components/Page/Page";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import boardData from "./board.json";
-import star from "../../../Assets/Images/Star.svg"; // Import star image directly
-
-// Define button animation variants
-const buttonVariants = {
-  initial: {
-    y: 0,
-  },
-  hover: {
-    y: "0.5vw",
-  },
-};
+import star from "../../../Assets/Images/Star.svg";
 
 // Define star animation variants
 const starVariants = {
@@ -40,7 +30,6 @@ type Committee =
   | "Projects"
   | "Consulting";
 
-
 // Board member interface
 interface BoardMember {
   name: string;
@@ -57,23 +46,10 @@ const BoardMemberCard: React.FC<{
   textColor: string;
   isDark: boolean;
 }> = ({ member, textColor, isDark }) => {
-  // Get the glow color based on theme
-  const glowColor = isDark ? "#F58134" : "#19B5CA";
-
-  // Hover style for links
-  const linkStyle = {
-    transition: "all 0.3s ease",
-    "&:hover": {
-      textShadow: `0 0 8px ${glowColor}, 0 0 12px ${glowColor}66`,
-      color: glowColor,
-    },
-  };
-
   return (
     <div className="flex flex-col items-center">
       {/* Member image placeholder - 250x250 with rounded corners */}
       <div className="w-[250px] h-[250px] rounded-[10px] bg-[#D9D9D9] overflow-hidden flex items-center justify-center">
-        {/* Display initials or a generic icon instead of trying to load an image */}
         <span
           className="text-[80px] font-bold text-gray-400"
           style={{ fontFamily: "'Albert Sans', sans-serif" }}
@@ -93,7 +69,7 @@ const BoardMemberCard: React.FC<{
         {member.name}
       </h3>
 
-      {/* Member links with hover effect */}
+      {/* Member links */}
       <div
         className="text-[20px] mt-1"
         style={{ color: isDark ? "#9CA3AF" : "#6B7280" }}
@@ -102,21 +78,7 @@ const BoardMemberCard: React.FC<{
           href={member.personalWebsite || "#"}
           target="_blank"
           rel="noopener noreferrer"
-          className="block hover:underline transition-all duration-300"
-          style={{
-            "&:hover": {
-              color: glowColor,
-              textShadow: `0 0 8px ${glowColor}, 0 0 12px ${glowColor}66`,
-            },
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.color = glowColor;
-            e.currentTarget.style.textShadow = `0 0 8px ${glowColor}, 0 0 12px ${glowColor}66`;
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.color = isDark ? "#9CA3AF" : "#6B7280";
-            e.currentTarget.style.textShadow = "none";
-          }}
+          className="block hover:underline transition-all duration-300 hover:text-[#F58134] dark:hover:text-[#19B5CA]"
         >
           personal website / resume
         </a>
@@ -124,21 +86,7 @@ const BoardMemberCard: React.FC<{
           href={member.linkedIn || "#"}
           target="_blank"
           rel="noopener noreferrer"
-          className="block hover:underline transition-all duration-300"
-          style={{
-            "&:hover": {
-              color: glowColor,
-              textShadow: `0 0 8px ${glowColor}, 0 0 12px ${glowColor}66`,
-            },
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.color = glowColor;
-            e.currentTarget.style.textShadow = `0 0 8px ${glowColor}, 0 0 12px ${glowColor}66`;
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.color = isDark ? "#9CA3AF" : "#6B7280";
-            e.currentTarget.style.textShadow = "none";
-          }}
+          className="block hover:underline transition-all duration-300 hover:text-[#F58134] dark:hover:text-[#19B5CA]"
         >
           LinkedIn link
         </a>
@@ -214,7 +162,7 @@ const Board: React.FC = () => {
   return (
     <Page>
       <div
-        className="min-h-screen pt-20 pb-12 relative"
+        className="min-h-screen pt-24 md:pt-20 pb-12 relative"
         style={{ backgroundColor }}
       >
         {/* Top right stars - moved higher up */}
@@ -268,11 +216,11 @@ const Board: React.FC = () => {
               style={{
                 backgroundColor,
                 zIndex: 5,
-                height: "auto", // Remove fixed height to allow content to determine height
+                height: "auto",
               }}
             >
-              {/* Committee section header with glowing underline */}
-              <div className="pl-2 mb-6">
+              {/* Committee section header with glowing underline - hide on mobile */}
+              <div className="pl-2 mb-6 hidden md:block">
                 <h2
                   className="font-albert-sans font-medium text-[26px] leading-[28px] tracking-[0px] mb-2"
                   style={{
@@ -294,21 +242,31 @@ const Board: React.FC = () => {
                 ></div>
               </div>
 
-              {/* Committee list - allow full height */}
-              <div className="pl-2 pr-2 md:overflow-y-auto md:max-h-[calc(100vh-200px)]">
-                <ul className="space-y-[20px]">
+              {/* Committee list - horizontal scroll on mobile, vertical on desktop */}
+              <div className="md:pl-2 md:pr-2 md:overflow-y-auto md:max-h-[calc(100vh-200px)]">
+                <ul className="flex flex-wrap md:flex-col gap-2 md:gap-0 md:space-y-[20px] pb-4 md:pb-0 px-2">
                   {committees.map((committee) => (
                     <li key={committee} className="flex items-center">
                       <button
-                        className="flex items-center w-full text-left font-albert-sans font-normal text-[22px] leading-[26px] tracking-[0px]"
+                        className="flex items-center text-left font-albert-sans font-normal text-[16px] md:text-[22px] leading-[26px] tracking-[0px] px-3 py-2 md:px-0 md:py-0 rounded-full transition-colors min-w-fit"
                         style={{
                           fontFamily: "'Albert Sans', sans-serif",
                           color: textColor,
+                          backgroundColor:
+                            selectedCommittee === committee
+                              ? isDark
+                                ? "rgba(245, 129, 52, 0.2)"
+                                : "rgba(25, 181, 202, 0.2)"
+                              : "transparent",
+                          border:
+                            selectedCommittee === committee
+                              ? `1px solid ${isDark ? "#F58134" : "#19B5CA"}`
+                              : "none",
                         }}
                         onClick={() => setSelectedCommittee(committee)}
                       >
                         <span
-                          className={`inline-block w-5 h-5 rounded-full border mr-3`}
+                          className={`hidden md:inline-block w-5 h-5 rounded-full border mr-3`}
                           style={{
                             borderColor: buttonBgColor,
                             backgroundColor:
@@ -324,8 +282,8 @@ const Board: React.FC = () => {
                 </ul>
               </div>
 
-              {/* Join us button - positioned consistently */}
-              <div className="mt-8 mb-8 relative pl-2">
+              {/* Join us button - hide on mobile */}
+              <div className="mt-8 mb-8 relative pl-2 hidden md:block">
                 <div className="relative w-[160px] h-[60px]">
                   <div
                     className="absolute top-[8px] left-0 w-full h-[50px] rounded-full"
@@ -396,7 +354,7 @@ const Board: React.FC = () => {
             <div className="w-full md:w-3/4 px-4 md:px-12 pb-24">
               {/* Title */}
               <h1
-                className="font-albert-sans font-medium text-[40px] md:text-[60px] leading-[45px] md:leading-[60px] tracking-[0px] mb-10 mt-4 md:mt-0"
+                className="font-albert-sans font-medium text-[36px] md:text-[60px] leading-[40px] md:leading-[60px] tracking-[0px] mb-6 md:mb-10 mt-4 md:mt-0"
                 style={{
                   fontFamily: "'Albert Sans', sans-serif",
                 }}

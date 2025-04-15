@@ -9,8 +9,11 @@ const AboutUs = ({
   const { isDark } = useTheme();
 
   return (
-    <div ref={aboutUsRef} className="flex flex-col items-center py-24 min-h-screen lg:w-[80vw] w-[95vw] font-albert-sans pb-56">
-      <div className="grid gap-12 md:grid-cols-2 max-w-[90vw] w-full px-4">
+    <div
+      ref={aboutUsRef}
+      className="flex flex-col items-center -mt-[30vh] md:mt-0 pt-0 md:pt-24 pb-20 lg:w-[80vw] w-[95vw] font-albert-sans"
+    >
+      <div className="grid gap-6 md:gap-12 md:grid-cols-2 max-w-[90vw] w-full px-4">
         {/* WHO WE ARE Section */}
         <div className="flex flex-col justify-between gap-8 md:order-1">
           <div className="flex flex-col gap-4">
