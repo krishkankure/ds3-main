@@ -16,7 +16,7 @@ const Card: React.FC<CardProps> = ({ title, imageSrc, description, link }) => {
 
   return (
     <div
-      className={`p-4 rounded-lg shadow-lg border relative cursor-pointer duration-100 ${
+      className={`p-4 rounded-lg shadow-lg border relative cursor-pointer duration-100  ${
         isDark
           ? "bg-black text-white border-white hover:[box-shadow:0px_0px_20px_8px_#F58134]"
           : "bg-white text-black border-gray-300 hover:[box-shadow:0px_0px_20px_8px_#11B3C9]"
@@ -33,7 +33,7 @@ const Card: React.FC<CardProps> = ({ title, imageSrc, description, link }) => {
           isDark ? "bg-[#303030]" : "bg-gray-200"
         }`}
         style={{
-          borderRadius: "370px"
+          borderRadius: "370px",
         }}
       >
         <p
@@ -53,7 +53,7 @@ const Card: React.FC<CardProps> = ({ title, imageSrc, description, link }) => {
           style={{
             fontFamily: "'Albert Sans', sans-serif",
             color: isDark ? "white" : "black",
-            lineHeight: "70px"
+            lineHeight: "45px",
           }}
         >
           {title}
@@ -62,7 +62,7 @@ const Card: React.FC<CardProps> = ({ title, imageSrc, description, link }) => {
       <img
         src={imageSrc}
         alt={title}
-        className="w-full h-56 object-cover rounded-md mb-2"
+        className="w-full h-[300px] object-cover rounded-md mb-2"
         style={{ borderRadius: "8px" }}
       />
       <p
@@ -70,7 +70,7 @@ const Card: React.FC<CardProps> = ({ title, imageSrc, description, link }) => {
         style={{
           fontFamily: "'Albert Sans', sans-serif",
           color: isDark ? "white" : "black",
-          lineHeight: "25px"
+          lineHeight: "25px",
         }}
       >
         {description}

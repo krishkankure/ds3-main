@@ -36,10 +36,10 @@ const Star = ({
     // Desktop styles remain unchanged
     return {
       width: `${w}vw`,
-      opacity: isDark ? 0.4 : 0.6,
+      opacity: isDark ? 0.7 : 0.6,
       filter: isDark
-        ? "drop-shadow(0px 0px 8px white)"
-        : "drop-shadow(0px 0px 8px #19B5CA) brightness(0.3)",
+        ? "drop-shadow(0 0 50px 20px rgba(0, 0, 0, 0.75))"
+        : "drop-shadow(0 0 50px 20px rgba(0, 0, 0, 1)) brightness(1)",
     };
   };
 

@@ -35,7 +35,11 @@ export default function UpcomingEvents() {
         </div> */}
 
       {loading ? (
-        Array.from({ length: 3 }).map((_, index) => <Card {...({} as EventType)} key={index} />)
+        <div className="grid grid-cols-[repeat(auto-fit,clamp(300px,40vw,400px))] w-full  md:gap-5 ">
+          {Array.from({ length: 10 }).map((_, index) => (
+            <Card {...({} as EventType)} key={index} />
+          ))}
+        </div>
       ) : error ? (
         <Error message={error!} />
       ) : (
@@ -50,7 +54,7 @@ export default function UpcomingEvents() {
   );
 }
 
-function Card({ title, date, description, imageUrl, addToCalendarUrl }: EventType) {
+function Card({ title, date, description, imageUrl, addToCalendarUrl,location }: EventType) {
   const { isDark } = useTheme();
 
   return (
@@ -81,7 +85,6 @@ function Card({ title, date, description, imageUrl, addToCalendarUrl }: EventTyp
           style={{
             fontFamily: "'Albert Sans', sans-serif",
             color: isDark ? "white" : "black",
-            lineHeight: "70px",
           }}
         >
           {title}
@@ -91,10 +94,18 @@ function Card({ title, date, description, imageUrl, addToCalendarUrl }: EventTyp
           style={{
             fontFamily: "'Albert Sans', sans-serif",
             color: isDark ? "white" : "black",
-            lineHeight: "25px",
           }}
         >
           {date}
+        </p>
+        <p
+          className="text-lg opacity-80"
+          style={{
+            fontFamily: "'Albert Sans', sans-serif",
+            color: isDark ? "white" : "black",
+          }}
+        >
+          {location}
         </p>
       </div>
       <div className="w-full aspect-video relative mb-2">

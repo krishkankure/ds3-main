@@ -22,12 +22,18 @@ export function useCalendarEvents() {
 
         const mappedEvents = (data.items || [])
           .filter((item: any) => {
-            const startDate = new Date(item.start?.dateTime || item.start?.date);
+            const startDate = new Date(
+              item.start?.dateTime || item.start?.date
+            );
             return startDate > now;
           })
           .sort((a: any, b: any) => {
-            const dateA = new Date(a.start?.dateTime || a.start?.date).getTime();
-            const dateB = new Date(b.start?.dateTime || b.start?.date).getTime();
+            const dateA = new Date(
+              a.start?.dateTime || a.start?.date
+            ).getTime();
+            const dateB = new Date(
+              b.start?.dateTime || b.start?.date
+            ).getTime();
             return dateA - dateB;
           })
           .map((item: any) => {
@@ -43,28 +49,30 @@ export function useCalendarEvents() {
             const formattedDate = start.toLocaleDateString("en-US", {
               month: "short",
               day: "numeric",
-              year: "numeric",
+              year: "numeric"
             });
 
             const formattedTime = start.toLocaleTimeString("en-US", {
               hour: "numeric",
               minute: "2-digit",
-              hour12: true,
+              hour12: true
             });
 
             const rawUrl = item.attachments?.[0]?.fileUrl || null;
             const imageUrl =
               rawUrl?.includes("drive.google.com") && rawUrl.includes("id=")
-                ? `https://drive.google.com/thumbnail?id=${new URL(rawUrl).searchParams.get(
-                    "id"
-                  )}&sz=s1000`
+                ? `https://drive.google.com/thumbnail?id=${new URL(
+                    rawUrl
+                  ).searchParams.get("id")}&sz=s1000`
                 : rawUrl;
 
             const addToCalendarUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
               item.summary || "No Title"
             )}&dates=${startUTC}/${endUTC}&details=${encodeURIComponent(
               item.description || ""
-            )}&location=${encodeURIComponent(item.location || "")}&sf=true&output=xml`;
+            )}&location=${encodeURIComponent(
+              item.location || ""
+            )}&sf=true&output=xml`;
 
             return {
               title: item.summary || "No Title",
@@ -72,7 +80,7 @@ export function useCalendarEvents() {
               location: item.location || "No location",
               description: item.description || "No description",
               imageUrl,
-              addToCalendarUrl,
+              addToCalendarUrl
             };
           });
         // console.log(mappedEvents);

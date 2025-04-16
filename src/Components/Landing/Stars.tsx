@@ -3,7 +3,7 @@ import { AppearingVariants } from "./LandingVariants";
 import Star from "./Star";
 
 const Stars = ({
-  StarsArray
+  StarsArray,
 }: {
   StarsArray: { x: number; y: number; w: number }[];
 }) => {
@@ -17,7 +17,7 @@ const Stars = ({
       {StarsArray.map((star, i) => {
         return (
           <>
-            <Star x={star.x} y={star.y} w={star.w} index={i}></Star>
+            <Star x={star.x} y={star.y} w={star.w * 0.5} index={i}></Star>
           </>
         );
       })}
