@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import cardsData from "../../Pages/Home/cardsData.json";
+import { useState } from "react";
+import cardsData from "../../Assets/Data/cardsData.json";
 import { useTheme } from "../../Pages/Home/useTheme";
 
 const PeopleCarousel = () => {

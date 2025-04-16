@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
-import { baseURL } from "../../Utils/info";
 import { useTheme } from "../../Pages/Home/useTheme";
 import NavItem from "./NavItem";
 import { useState } from "react";
+import logo from "/src/Assets/Images/ds3_logo.png";
 
 const EventsDropdown = [
   {
@@ -59,7 +59,7 @@ const Navbar = () => {
               {/* logo */}
               <a className="space-x-2 cursor-pointer" onClick={navigateHome}>
                 <img
-                  src={`${baseURL}/src/Assets/Images/ds3_logo.png`}
+                  src={logo}
                   alt="Logo"
                   className="w-10 h-auto"
                 />

@@ -1,9 +1,9 @@
 import alumni from "../../../Assets/Data/AlumniTable.json";
-import search from "../../../Assets/Images/Alumni/AlumniAssets/Search.svg";
 import { useState } from "react";
 import { useTheme } from "../../Home/useTheme";
 import { FaLinkedin } from "react-icons/fa";
 import { VscLinkExternal } from "react-icons/vsc";
+import { IoIosSearch } from "react-icons/io";
 // Define an interface for alumni data
 interface AlumniData {
   name: string;
@@ -32,7 +32,8 @@ export default function AlumniTable() {
           placeholder="Search..."
           className=" ml-3 w-[90%] h-[90%] bg-inherit text-[30px] border-none outline-none text-black"
         />
-        <img src={search} alt="" className="mr-2 h-[80%]" />
+        {/* <img src={search} alt="" className="mr-2 h-[80%]" /> */}
+        <IoIosSearch className="mr-2 h-[80%] text-4xl" />
       </form>
       <div className="grid grid-cols-4 gap-x-10 gap-y-40 w-full m-0">
         {alumni

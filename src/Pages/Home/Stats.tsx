@@ -177,25 +177,25 @@ const Stats = () => {
       <div className="grid grid-cols-[repeat(auto-fit,clamp(400px,40%,650px))] gap-8 justify-center mt-10 w-full">
         <Card
           title="Data Hacks"
-          imageSrc="src/Assets/Images/homepage/images/datahacks_2.png"
+          imageSrc="src/Assets/Images/homepage/datahacks_2.png"
           description="Do projects and make your resume look better. I love projects so much omg!"
           link="www.ds3ucsd.com/our-team/datahacks"
         />
         <Card
           title="Projects"
-          imageSrc="src/Assets/Images/homepage/images/projects-img.png"
+          imageSrc="src/Assets/Images/homepage/projects-img.png"
           description="Do projects and make your resume look better. I love projects so much omg!"
           link="www.ds3ucsd.com/our-team/projects"
         />
         <Card
           title="Workshops"
-          imageSrc="src/Assets/Images/homepage/images/workshop-img.png"
+          imageSrc="src/Assets/Images/homepage/workshop-img.png"
           description="Do projects and make your resume look better. I love projects so much omg!"
           link="www.ds3ucsd.com/our-team/workshops"
         />
         <Card
           title="Professional Events"
-          imageSrc="src/Assets/Images/homepage/images/pf-events-img.png"
+          imageSrc="src/Assets/Images/homepage/pf-events-img.png"
           description="Do projects and make your resume look better. I love projects so much omg!"
           link="www.ds3ucsd.com/our-team/professional-events"
         />

@@ -4,7 +4,7 @@ import TextArea from "../../Components/Landing/TextArea";
 import Stars from "../../Components/Landing/Stars";
 import { useEffect, useState } from "react";
 import { useTheme } from "./useTheme";
-import StarsData from "./StarsData.json";
+import StarsData from "../../Assets/Data/StarsData.json";
 
 const Landing = ({
   aboutUsRef,

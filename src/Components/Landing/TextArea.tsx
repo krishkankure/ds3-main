@@ -1,6 +1,6 @@
 import Button from "../Button";
-import { baseURL } from "../../Utils/info";
 import { useTheme } from "../../Pages/Home/useTheme";
+import logo from "/src/Assets/Images/ds3_logo.png";
 
 export default function Text() {
   const { isDark } = useTheme();
@@ -33,7 +33,7 @@ export default function Text() {
               Data Science
             </p>
             <img
-              src={`${baseURL}/src/Assets/Images/ds3_logo.png`}
+              src={logo}
               alt="Logo"
               className="-scale-x-100 w-12 object-contain ml-2 hidden md:block"
             />

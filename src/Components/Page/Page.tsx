@@ -2,7 +2,7 @@ import "simplebar-react/dist/simplebar.min.css";
 import SimpleBar from "simplebar-react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { baseURL } from "../../Utils/info";
+import bear from "/src/Assets/Images/Sleepy_Bear.png";
 
 interface PageProps {
   children?: React.ReactNode;
@@ -19,7 +19,7 @@ const Page = ({ children }: PageProps) => {
               Coming Soon
             </h2>
             <img
-              src={`${baseURL}/src/Assets/Images/Sleepy_Bear.png`}
+              src={bear}
               alt="Under Construction"
               className="bear mt-24 w-[42vw]"
             />

@@ -1,5 +1,3 @@
-import { baseURL } from "../../Utils/info";
-
 const Sponsers = () => {
   return (
     <div
@@ -9,17 +7,17 @@ const Sponsers = () => {
       <h4 className="text-lg font-bold text-white">Our Sponsers</h4>
       <div className="flex justify-center gap-x-[2vw]">
         <img
-          src={`${baseURL}/src/Assets/Images/CSE_logo.png`}
+          src="./sponsors/CSE_logo.png"
           alt="CSE @ UCSD"
           className="w-[4vw] h-auto object-contain"
         />
         <img
-          src={`${baseURL}/src/Assets/Images/HDSI_logo_light.png`}
+          src="./sponsors/HDSI_logo_light.png"
           alt="HDSI @ UCSD"
           className="w-[10vw] h-auto object-contain"
         />
         <img
-          src={`${baseURL}/src/Assets/Images/palantir-vector-logo.svg`}
+          src="./sponsors/palantir-vector-logo.svg"
           alt="Palantir"
           className="w-[8vw] h-auto object-contain"
         />

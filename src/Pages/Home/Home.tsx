@@ -1,4 +1,3 @@
-import React from "react";
 import Page from "../../Components/Page/Page";
 import AboutUs from "./AboutUs";
 import WhereWeBeen from "./WhereWeBeen";

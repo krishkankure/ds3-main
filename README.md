@@ -1,50 +1,52 @@
-# React + TypeScript + Vite
+# DS3 Main Site Documentation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Getting Started
 
-Currently, two official plugins are available:
+1. Clone the repo with `git clone https://github.com/ucsdds3/main-site.git`
+2. Open the repo in your preferred code editor (For VSCode, use the command `code main-site`)
+3. Run `npm install` to install dependencies
+4. Run `npm run dev` to start the development server
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Contribution Guidelines
 
-## Expanding the ESLint configuration
+To make contributions to the DS3 Main Site, please follow these guidelines:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. (Infra members with write access can skip this step) Fork the repository to your own GitHub account and clone it.
+2. Create a new branch for your changes using the command `git checkout -b <branch-name>`.
+3. Make your changes and push them to your branch.
+4. Create a pull request from your branch to the main branch. Write a summary of your changes in the pull request description.
+5. Once the pull request is merged, you can safely delete your branch using the command `git branch -d <branch-name>`.
 
-- Configure the top-level `parserOptions` property like this:
+## Project Structure
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Stick to the project structure shown below to keep things organized. The project is structured as follows:
+
+```
+main-site/  
+├── node_modules/         # Installed dependencies  
+├── public/               # Public assets  
+├── src/                  # Source code files  
+│   ├── Assets/           # Project assets  
+│   │   ├── Data/         # Data files  
+│   │   └── Images/       # Image assets  
+│   ├── Components/       # General components  
+│   ├── Hooks/            # Custom hooks  
+│   ├── Pages/            # Pages  
+│   │   └── Example/      # Page-specific components  
+│   ├── Styles/           # Custom styles  
+│   ├── Utils/            # Utilities  
+│   │   ├── functions.ts  # Utility functions  
+│   │   └── types.ts      # Utility types  
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Dependencies
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Check the depencencies listed below for this project before starting. Use these to your advantage so you don't have to do more work! There are more dependencies that you can find in the `package.json` file, but these are the ones you should be familiar with.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- [Vite](https://vitejs.dev/) - Build Tool
+- [React](https://react.dev/) - Frontend Framework
+- [React Router](https://reactrouter.com/en/main) - Routing
+- [Tailwind CSS](https://tailwindcss.com/) - CSS Framework (prefer this over making your own styles)
+- [React Icons](https://react-icons.github.io/react-icons/) - Icon Library (prefer this over svgs)
+- [Daisy UI](https://daisyui.com/) - Tailwind CSS Component Library (prefer this over making your own components)
+- [Framer Motion](https://www.framer.com/motion/) - Animation Library (prefer this over making your own animations)

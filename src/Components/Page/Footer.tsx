@@ -1,5 +1,5 @@
-import { baseURL } from "../../Utils/info";
 import SocialMedia from "./SocialMedia";
+import logo from "/src/Assets/Images/ds3_logo.png";
 // import Sponsers from "./Sponsers";
 
 const Footer = () => {
@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="flex px-6 flex-1 gap-3 ">
         <div className="flex items-center">
           <img
-            src={`${baseURL}/src/Assets/Images/ds3_logo.png`}
+            src={logo}
             alt="DS3 Logo"
             className="w-12"
           />

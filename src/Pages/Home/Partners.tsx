@@ -1,30 +1,22 @@
-import React, { useEffect, useState } from "react";
 import { useTheme } from "./useTheme";
-import { baseURL } from "../../Utils/info";
 
-const Partners: React.FC = () => {
+const logos = [
+  "intel.png",
+  "asml.png",
+  "hp.png",
+  "blizzard.png",
+  "rockstar.png",
+  "marimo.png",
+  "SDX-logo.png",
+  "hdsi-logo-light.png",
+  "palantir_dark.png",
+  "hdsi-logo.svg",
+  "cse-logo.svg",
+  "ibm.svg"
+];
+
+const Partners = () => {
   const { isDark } = useTheme();
-  const [partnerLogos, setPartnerLogos] = useState<string[]>([]);
-
-  useEffect(() => {
-    // List of partner logo files
-    const logos = [
-      "intel.png",
-      "asml.png",
-      "hp.png",
-      "blizzard.png",
-      "rockstar.png",
-      "marimo.png",
-      "SDX-logo.png",
-      "hdsi-logo-light.png",
-      "palantir_dark.png",
-      "hdsi-logo.svg",
-      "cse-logo.svg",
-      "ibm.svg"
-    ];
-    
-    setPartnerLogos(logos);
-  }, []);
 
   return (
     <div className="lg:w-[80vw] w-[95vw]">
@@ -59,10 +51,10 @@ const Partners: React.FC = () => {
         </p>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12">
-          {partnerLogos.map((logo, index) => (
+          {logos.map((logo, index) => (
             <div key={index} className="flex items-center justify-center">
               <img 
-                src={`${baseURL}/src/Assets/Images/homepage/partners logos/${logo}`}
+                src={`./partners/${logo}`}
                 alt={`Partner Logo ${index + 1}`}
                 className="max-h-24 w-auto object-contain"
               />
